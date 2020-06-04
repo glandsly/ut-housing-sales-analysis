@@ -11,7 +11,7 @@ For project 2, we will analyze Texas home sales from 2011-2020. Our selected dat
 - Which nearby county has the highest average home prices?
 - Which nearby county has the lowest average home prices? 
 
-During this project, we will use web scraping, HTML, JavaScript, SQL, D3, and Tableau.
+During this project, we will use web scraping, HTML, JavaScript, MongoDB, and Tableau.
 
 Link: https://www.recenter.tamu.edu/data/housing-activity#!/activity/County/Austin_County
 

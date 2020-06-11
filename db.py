@@ -2,9 +2,10 @@ import os
 import pandas as pd
 import pymongo
 import json
+from config import databaseusername, databasepassword
 
 def import_content(filepath):
-    mng_client = pymongo.MongoClient('localhost', 27017)
+    mng_client = pymongo.MongoClient(f'mongodb+srv://{databaseusername}:{databasepassword}@george-ilsoc.gcp.mongodb.net/test?retryWrites=true&w=majority')
     mng_db = mng_client['housing'] # Replace mongo db name
     collection_name = 'texas' # Replace mongo db collection name
     db_cm = mng_db[collection_name]
@@ -17,5 +18,5 @@ def import_content(filepath):
     db_cm.insert_many(data_json)
 
 if __name__ == "__main__":
-  filepath = 'housing_df.csv'  # pass csv file path
+  filepath = 'data/complete_df.csv'  # pass csv file path
   import_content(filepath)

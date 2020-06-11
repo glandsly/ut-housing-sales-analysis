@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>Texas Housing Market</title>
+
+<!-- Boostrap Stylesheet -->
+<link rel="stylesheet" href="bootstrap.min.css" media="screen">
+
+<!-- Our own CSS stylesheet -->
+<link rel="stylesheet" href="style.css" media="screen">
+
+</head>
+
+<body>
+<!-- Start of navbar -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid navbar-custom">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="row">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="col-xs-9 phone-nav">
+            <a class="navbar-brand" href="home.html" id="logo">Texas Housing Market</a>
+        </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right navbar-right-custom">
+            <li class="dropdown">
+            <li><a href="sales_listing.html">Sales per Total Listing</a></li>
+            <li><a href="avg_sale.html">Average Sale Price</a></li>
+            <li><a href="avg_analysis.html">Average Sales Price Analysis</a></li>
+            </li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+    </div><!-- /.container-fluid -->
+</nav>
+<!-- End of navbar -->
+
+<!-- Start of container -->
+<div class="container">
+    <section class="row">
+    <div class="col-md-8">
+        <article class="description-content">
+        <h1 class="description-header">Average Price per County</h1>
+        <button type = "button">
+            <a href = "avg_sale_year.html">Year</a>
+        </button>
+        <hr class="description-hr"/>
+        <div class='tableauPlaceholder' id='viz1591833185879' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Dashboard1_15918331716710&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Dashboard1_15918331716710&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Dashboard1_15918331716710&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1591833185879');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> 
+        <p>You can view a statistical graph that displays the Average Sales Price of the Housing Market in Texas.</p>
+        </article>
+    </div>
+    <div class="col-md-4">
+
+        <!-- Start of Visualizations imageNav Area -->
+        <section id="imageNav-area">
+        <div class="imageNav-content">
+            <h2 class="imageNav-header">Visualizations</h2>
+            <hr />
+            <div id="images">
+            <a href="sales_listing.html"><img src="images/sales_listing.png" alt="Sales per Total Listings" class="imageNav-photo"></a>
+            <a href="avg_sale.html"><img src="images/avg_sale.png" alt="Average Sales" class="imageNav-photo"></a>
+            <a href="avg_analysis.html"><img src="images/avg_analysis.png" alt="Average Sales Analysis" class="imageNav-photo"></a>
+            </div>
+        </div>
+        </section>
+        <!-- End of the Visualizations imageNav Area -->
+
+    </div>
+    </section>
+</div>
+<!-- End of container -->
+
+<!-- Start of footer -->
+<footer class="footer navbar-fixed-bottom">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+    &copy; Copyright Coding Bootcamp 2017
+    </p>
+</footer>
+<!-- End of footer -->
+
+<!-- jQuery CDN -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>

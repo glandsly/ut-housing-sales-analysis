@@ -202,6 +202,7 @@ html {
   .imageNav-photo:hover {
     /* Visuals */
     opacity: 0.6;
+    border: 2px solid darksalmon;
   }
   
   .imageNav-photo.active {
@@ -215,28 +216,35 @@ html {
   
     /* Typography */
     text-align: center;
+
   }
+/* titles for the vis section graphs */
+  .imageHeader{
+    position: relative;
+    top: 200px;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: #0A6ED3;
+    }
   
   /* ----IMAGE NAV END---- */
   
-  /* ----COMPARISON START---- */
-  .comparison-image:hover {
-    opacity: 0.6;
+  /*Graphs Button that switch between year and month or county*/
+  .graph_button {
+    transition-duration: 0.4s;
+    padding: 14px 40px;
+    cursor: pointer;
+    border: 2px solid black; 
   }
   
-  .comparison-header {
-    /* Positioning */
-    margin-bottom: 10px;
-    font-family: Georgia, Times, "Times New Roman", serif;
-  
-    /* Typography */
-    font-size: 20px;
-    font-weight: bold;
-    color: #0b5ca8;
-    text-align: center;
+  .graph_button:hover {
+    background: rgb(233,150,122);
+    background: radial-gradient(circle, rgba(233,150,122,1) 0%, rgba(255,160,122,1) 50%, rgba(250,128,114,1) 100%);
+    color: rgb(145, 14, 64);
   }
-  
-  /* ----COMPARISON END---- */
+
   
   /* ----FOOTER START---- */
   .footer {
@@ -267,7 +275,8 @@ html {
     padding-top: 3px;
   
     /* Visual */
-    background-color: #4aaaa5;
+    background: rgb(255,5,5);
+    background: linear-gradient(90deg, rgba(255,5,5,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   }
   
   /* ----FOOTER END---- */

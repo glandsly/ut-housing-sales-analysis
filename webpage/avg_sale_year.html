@@ -39,8 +39,16 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
               <li class="dropdown">
-                <li><a href="sales_listing.html">Sales per Total Listing</a></li>
-                <li><a href="avg_sale.html">Average Sale Price</a></li>
+                <a href="sales_listing_month.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sales per Total Listing <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="sales_listing_month.html">Monthly</a></li>
+                    <li><a href="sales_listing.html">Yearly</a></li>
+                </ul>
+                <li><a href="sales_listing_month.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Average Sale Price<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="avg_sale.html">Monthly</a></li>
+                    <li><a href="avg_sale_year.html">Yearly</a></li>
+                </ul>
                 <li><a href="avg_analysis.html">Average Sales Price Analysis</a></li>
               </li>
             </ul>
@@ -56,9 +64,7 @@
         <div class="col-md-8">
           <article class="description-content">
             <h1 class="description-header">Average Price per Year</h1>
-            <button type = "button">
-                <a href = "avg_sale.html">County</a>
-            </button>
+            <a href = "avg_sale.html"><button type = "button" class = "graph_button">County</button></a>
             <hr class="description-hr"/>
             <div class='tableauPlaceholder' id='viz1591834222916' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Dashboard3_15918341841930&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Dashboard3_15918341841930&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Dashboard3_15918341841930&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1591834222916');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
             <p>You can view a statistical graph that displays the Average Sales Price of the Housing Market in Texas.</p>
@@ -72,9 +78,12 @@
               <h2 class="imageNav-header">Visualizations</h2>
               <hr />
               <div id="images">
-                <a href="sales_listing.html"><img src="images/sales_listing.png" alt="Sales per Total Listings" class="imageNav-photo"></a>
-                <a href="avg_sale.html"><img src="images/avg_sale.png" alt="Average Sales" class="imageNav-photo"></a>
-                <a href="avg_analysis.html"><img src="images/avg_analysis.png" alt="Average Sales Analysis" class="imageNav-photo"></a>
+                <div class ="imageHeader">Sales per Total Listing</div>
+                <a href="sales_listing.html"><img src="images/sales_listing.png" alt="Sales per Total Listings" class="imageNav-photo"></a></br>
+                <div class ="imageHeader">Average Sale Price</div>
+                <a href="avg_sale.html"><img src="images/avg_sale.png" alt="Average Sales" class="imageNav-photo active"></a></br>
+                <div class ="imageHeader">Average Price Analysis</div>
+                <a href="avg_analysis.html"><img src="images/avg_analysis.png" alt="Average Sales Analysis" class="imageNav-photo"></a></br>
               </div>
             </div>
           </section>
@@ -89,7 +98,8 @@
     <footer class="footer navbar-fixed-bottom">
       <div class="two-toned-footer-color"></div>
       <p class="text-muted text-muted-footer text-center">
-        &copy; Copyright Coding Bootcamp 2017
+        &copy;Copyright Analyst Anonymous 2020</br>
+        <small>UT Data Bootcamp 2020
       </p>
     </footer>
     <!-- End of footer -->

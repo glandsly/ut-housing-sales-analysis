@@ -38,9 +38,17 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
-              <li class="dropdown">
-                <li><a href="sales_listing.html">Sales per Total Listing</a></li>
-                <li><a href="avg_sale.html">Average Sale Price</a></li>
+              <li class="dropdown"> 
+                    <a href="sales_listing_month.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sales per Total Listing <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                     <li><a href="sales_listing_month.html">Monthly</a></li>
+                     <li><a href="sales_listing.html">Yearly</a></li>
+                    </ul>
+                    <li><a href="sales_listing_month.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Average Sale Price<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                     <li><a href="avg_sale.html">Monthly</a></li>
+                     <li><a href="avg_sale_year.html">Yearly</a></li>
+                    </ul>
                 <li><a href="avg_analysis.html">Average Sales Price Analysis</a></li>
               </li>
             </ul>
@@ -70,9 +78,12 @@
               <h2 class="imageNav-header">Visualizations</h2>
               <hr />
               <div id="images">
-                <a href="sales_listing.html"><img src="images/sales_listing.png" alt="Sales per Total Listings" class="imageNav-photo"></a>
-                <a href="avg_sale.html"><img src="images/avg_sale.png" alt="Average Sales" class="imageNav-photo"></a>
-                <a href="avg_analysis.html"><img src="images/avg_analysis.png" alt="Average Sales Analysis" class="imageNav-photo"></a>
+                <div class ="imageHeader">Sales per Total Listing</div>
+                <a href="sales_listing.html"><img src="images/sales_listing.png" alt="Sales per Total Listings" class="imageNav-photo"></a></br>
+                <div class ="imageHeader">Average Sale Price</div>
+                <a href="avg_sale.html"><img src="images/avg_sale.png" alt="Average Sales" class="imageNav-photo"></a></br>
+                <div class ="imageHeader">Average Price Analysis</div>
+                <a href="avg_analysis.html"><img src="images/avg_analysis.png" alt="Average Sales Analysis" class="imageNav-photo"></a></br>
               </div>
             </div>
           </section>
@@ -83,39 +94,16 @@
     </div>
     <!-- End of container -->
  <!--CONTAINER-->
- <div class="container">
-    <div id="PlotCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href="sales_listing.html"><img src="images/sales_listing.png" alt="Sales per Total Listings" class="imageNav-photo"></a>
-</div>
-            <div class="carousel-item" style="text-align: center">
-                <a href="avg_sale.html"><img src="images/avg_sale.png" alt="Average Sales" class="imageNav-photo"></a>
-</div>
-            <div class="carousel-item" style="text-align: center">
-                <a href="sales_listing.html"><img src="images/sales_listing.png" alt="Average Sales Analysis" class="imageNav-photo"></a>
-</div>
 
-        </div>
-        <a class="carousel-control-prev" href="#PlotCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#PlotCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</div>
-
-    <footer class="footer">
-            <div class="container">
-              <p class="text text-center">
-                <small>© Copyright Analyst Anonymous 2020</br>
-                <small>UT Data Analysis and Visualization Bootcamp</br>
-              </p>
-            </div>
-          </footer>
+  <!-- Start of footer -->
+  <footer class="footer navbar-fixed-bottom">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy;Copyright Analyst Anonymous 2020</br>
+      <small>UT Data Bootcamp 2020
+    </p>
+  </footer>
+  <!-- End of footer -->
           
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -131,3 +119,5 @@
 </body>       
 
 </html>
+
+
